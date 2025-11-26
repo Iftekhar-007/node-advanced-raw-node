@@ -42,7 +42,7 @@ function initializeDirectories() {
   testFiles.forEach((file) => {
     fs.writeFileSync(
       path.join(sourceDir, file),
-      `contetn of this ${this.file} file`
+      `content of this ${this.file} file`
     );
   });
 
@@ -58,7 +58,7 @@ function initializeDirectories() {
   });
 }
 
-// initializeDirectories();
+initializeDirectories();
 
 function getCategory(filename) {
   const ext = path.extname(filename).toLowerCase();
